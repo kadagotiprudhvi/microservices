@@ -5,31 +5,45 @@ Microservice Installation Script <br>
 To use the script, follow the instructions below: <br>
 
 1)This command navigates to correct directory path of the file <br>
- ` $ cd Microservices/method1/`
+ ``` 
+ $ cd Microservices/method1/
+```
 
 2)This command runs the script and deploys the service <br>
 
 • FOR DEPLOYING IN CONTAINER <br>
 
 Use this command for deploying demo-frontend service <br>
-  `$ bash root.sh container demo-frontend`
+  ```
+  $ bash root.sh container demo-frontend
+```
 
 Use this command for deploying demo-backend1 service <br>
-  $ bash root.sh container demo-backend1
+  ```
+$ bash root.sh container demo-backend1
+```
 
 Use this command for deploying demo-backend2 service <br>
-  $ bash root.sh container demo-backend2
+  ```
+$ bash root.sh container demo-backend2
+```
 
 • FOR DEPLOTING IN AWS <br>
  
 Use this command for deploying demo-frontend service <br>
-  `$ bash root.sh aws demo-frontend <0.0.0.0> (change ip_adress as required)`
+  ```
+  $ bash root.sh aws demo-frontend <0.0.0.0> (change ip_adress as required)
+```
 
 Use this command for deploying demo-backend1 service    
-  `$ bash root.sh aws demo-backend1 <0.0.0.0> (change ip_adress as required)`
+  ```
+  $ bash root.sh aws demo-backend1 <0.0.0.0> (change ip_adress as required)
+```
 
 Use this command for deploying demo-backend2 service    
-  `$ bash root.sh aws demo-backend2 <0.0.0.0> (change ip_adress as required)`
+  ```
+  $ bash root.sh aws demo-backend2 <0.0.0.0> (change ip_adress as required)
+```
 
 
 

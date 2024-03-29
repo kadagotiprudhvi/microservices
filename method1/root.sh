@@ -4,7 +4,7 @@ git pull
 if [[ "$1" == "container" ]]; then
 
 #installing docker
-bash  docker_package
+bash  docker_package.sh
 
 #cloing the git code
 git clone https://github.com/TekspotEdu/microserviceapp.git

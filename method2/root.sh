@@ -1,11 +1,7 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            final_script
-############################
 
-
-#cd microserviceapp
 git pull
 
-#slecting platform to get install
+# Poping up the options for slecting environment to get install
 
 echo " select the platform to get instal
 
@@ -15,7 +11,7 @@ container
 "
 read platform
 
-#selecting the service to get install
+#Poping up the options for selecting the service to get install
 
 echo " select the service to get install
 
@@ -32,8 +28,6 @@ if [ "$platform" == "container" ]; then
 
 
 #installing docker
-
-#cd /home/ubuntu
 bash  docker_package
 
 #intalling the app
@@ -60,18 +54,13 @@ case $service in
 ;;
 esac
 
-
 else
-
-
-
 
 echo "enter ip adress:"
 read ip
 case $service in
 
 "demo-frontend")
-#   ssh ubuntu@$ip "sudo apt-get update && apt-get install -y npm"
     ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
     ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y nginx"
     ssh ubuntu@$ip "sudo service nginx start"
@@ -93,8 +82,6 @@ case $service in
     ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3"
     ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3-pip"
     ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
-#     ssh ubuntu@$ip "sudo chmod 744 microserviceapp"
-#     ssh ubuntu@$ip "sudo chown -R ubuntu /microserviceapp/demo-backend2/sa"
     ssh ubuntu@$ip "cd /home/ubuntu/microserviceapp/demo-backend2/sa/ && sudo pip3 install -r requirements.txt && sudo python3 sentiment_analysis.py"
 ;;
 

@@ -1,35 +1,35 @@
-Microservice Installation Script
-This script facilitates the installation of microservices on either Docker containers or AWS instances based on the provided parameters.
+Microservice Installation Script <br>
+##This script facilitates the installation of microservices on either Docker containers or AWS instances based on the provided parameters.
 
-Usage
-To use the script, follow the instructions below:
+##Usage
+To use the script, follow the instructions below: <br>
 
-1)This command navigates to correct directory path of the file 
-  $ cd Microservices/method1/
+1)This command navigates to correct directory path of the file <br>
+ ` $ cd Microservices/method1/`
 
-2)This command runs the script and deploys the service  
+2)This command runs the script and deploys the service <br>
 
-• FOR DEPLOYING IN CONTAINER
+• FOR DEPLOYING IN CONTAINER <br>
 
-For deploying demo-frontend service
-  $ bash root.sh container demo-frontend
+Use this command for deploying demo-frontend service <br>
+  `$ bash root.sh container demo-frontend`
 
-For deploying demo-backend1 service
+Use this command for deploying demo-backend1 service <br>
   $ bash root.sh container demo-backend1
 
-For deploying demo-backend2 service
+Use this command for deploying demo-backend2 service <br>
   $ bash root.sh container demo-backend2
 
-• FOR DEPLOTING IN AWS
+• FOR DEPLOTING IN AWS <br>
  
-For deploying demo-frontend service  
-  $ bash root.sh aws demo-frontend <0.0.0.0> (change ip_adress as required)
+Use this command for deploying demo-frontend service <br>
+  `$ bash root.sh aws demo-frontend <0.0.0.0> (change ip_adress as required)`
 
-For deploying demo-backend1 service    
-  $ bash root.sh aws demo-backend1 <0.0.0.0> (change ip_adress as required)
+Use this command for deploying demo-backend1 service    
+  `$ bash root.sh aws demo-backend1 <0.0.0.0> (change ip_adress as required)`
 
-For deploying demo-backend2 service    
-  $ bash root.sh aws demo-backend2 <0.0.0.0> (change ip_adress as required)
+Use this command for deploying demo-backend2 service    
+  `$ bash root.sh aws demo-backend2 <0.0.0.0> (change ip_adress as required)`
 
 
 

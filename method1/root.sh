@@ -1,7 +1,6 @@
-#finalscript
-#git pull
+#Getting the repository upadate
+git pull
 
-#this line is for selecting the interface to install the microservice
 if [[ "$1" == "container" ]]; then
 
 #installing docker
@@ -43,7 +42,6 @@ else
 case $2 in
 
         "demo-frontend")
-        #   ssh ubuntu@$3 "sudo apt-get update && apt-get install -y npm"
                 ssh ubuntu@$3 "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
                 ssh ubuntu@$3 "sudo apt-get update && sudo apt-get install -y nginx"
                 ssh ubuntu@$3 "sudo service nginx start"
@@ -65,8 +63,6 @@ case $2 in
                 ssh ubuntu@$3 "sudo apt-get update && sudo apt-get install -y python3"
                 ssh ubuntu@$3 "sudo apt-get update && sudo apt-get install -y python3-pip"
                 ssh ubuntu@$3 "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
-#     ssh ubuntu@$3 "sudo chmod 744 microserviceapp"
-#     ssh ubuntu@$3 "sudo chown -R ubuntu /microserviceapp/demo-backend2/sa"
                 ssh ubuntu@$3 "cd /home/ubuntu/microserviceapp/demo-backend2/sa/ && sudo pip3 install -r requirements.txt && sudo python3 sentiment_analysis.py"
         ;;
 esac

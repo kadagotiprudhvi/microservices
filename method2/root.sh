@@ -28,7 +28,7 @@ if [ "$platform" == "container" ]; then
 
 
 #installing docker
-bash  docker_package
+bash  docker_package.sh
 
 #intalling the app
 

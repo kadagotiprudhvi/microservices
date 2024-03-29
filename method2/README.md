@@ -5,20 +5,28 @@ This script facilitates the installation of microservices on either Docker conta
 To use the script, follow the instructions below: <br>
 
 1)This command navigates to correct directory path of the file <br>
-  `$ cd Microservices/method2/`
+  ```
+  $ cd Microservices/method2/
+```
 
 2)This command runs the script and deploys the service <br>
-  `$ bash root.sh`
+  ```
+  $ bash root.sh
+```
 
 After running the above command enter the inputs with appropriate parameters as below mentioned <br>
 ##Usage <br>
 To use the script, follow the instructions below: <br>
 
 1)This command navigates to correct directory path of the file <br>
-  `$ cd Microservices/method2/`
+  ```
+  $ cd Microservices/method2/
+```
 
 2)This command runs the script and deploys the service <br>
-  `$ bash root.sh`
+  ```
+  $ bash root.sh
+```
 
 After running the above command enter the inputs with appropriate parameters as below mentioned <br>
 

@@ -1,21 +1,7 @@
-Microservice Installation Script<br>
-This script facilitates the installation of microservices on either Docker containers or AWS instances based on the provided parameters.<br>
+## Microservice Installation Script<br>
+## This script facilitates the installation of microservices on either Docker containers or AWS instances based on the provided parameters.<br>
 
-##Usage
-To use the script, follow the instructions below: <br>
-
-1)This command navigates to correct directory path of the file <br>
-  ```
-  $ cd Microservices/method2/
-```
-
-2)This command runs the script and deploys the service <br>
-  ```
-  $ bash root.sh
-```
-
-After running the above command enter the inputs with appropriate parameters as below mentioned <br>
-##Usage <br>
+## Usage
 To use the script, follow the instructions below: <br>
 
 1)This command navigates to correct directory path of the file <br>

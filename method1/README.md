@@ -1,7 +1,7 @@
-Microservice Installation Script <br>
-##This script facilitates the installation of microservices on either Docker containers or AWS instances based on the provided parameters.
+## Microservice Installation Script <br>
+## This script facilitates the installation of microservices on either Docker containers or AWS instances based on the provided parameters.
 
-##Usage
+## Usage
 To use the script, follow the instructions below: <br>
 
 1)This command navigates to correct directory path of the file <br>
@@ -11,7 +11,7 @@ To use the script, follow the instructions below: <br>
 
 2)This command runs the script and deploys the service <br>
 
-• FOR DEPLOYING IN CONTAINER <br>
+## • FOR DEPLOYING IN CONTAINER <br>
 
 Use this command for deploying demo-frontend service <br>
   ```
@@ -28,7 +28,7 @@ Use this command for deploying demo-backend2 service <br>
 $ bash root.sh container demo-backend2
 ```
 
-• FOR DEPLOTING IN AWS <br>
+## • FOR DEPLOTING IN AWS <br>
  
 Use this command for deploying demo-frontend service <br>
   ```

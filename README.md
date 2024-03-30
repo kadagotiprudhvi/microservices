@@ -1,5 +1,5 @@
-##Microservice Deployment Script <br>
-##This Repository contains a source files for deploying three microservices either in a containerized environment or on other vm instances in two methods. <br>
+## Microservice Deployment Script <br>
+## This Repository contains a source files for deploying three microservices either in a containerized environment or on other vm instances in two methods. <br>
 
 In this repository there are two methos for running and deploying the services <br>
 • method1 (giving inputs along with bash command) <br>

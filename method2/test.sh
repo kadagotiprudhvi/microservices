@@ -21,7 +21,7 @@ bash docker_package.sh
 case $service in
 
 "react")
-  cd /home/ubuntu/microserviceapp/demo-frontend
+        cd /home/ubuntu/microserviceapp/demo-frontend
         sudo docker build -t docker_frontendimg . -f Dockerfile
         sudo docker run docker_frontendimg
 ;;

@@ -11,7 +11,7 @@ git clone https://github.com/kadagotiprudhvi/microservices.git
 
 2)This command navigates to correct directory path of the file <br>
   ```
-  $ cd Microservices/method2/
+  $ cd microservices/method2/
 ```
 
 3)This command runs the script and deploys the service <br>

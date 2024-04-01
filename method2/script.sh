@@ -1,31 +1,31 @@
+#slecting platform to get install
 
-git pull
+echo " select the platform to get instal
 
-# Poping up the options for slecting environment to get install
-
-echo 
-" select the platform to get instal
 aws
 container
+
 "
 read platform
 
-#Poping up the options for selecting the service to get install
+#selecting the service to get install
 
-echo 
-" select the service to get install
-react
-java
-python
+echo " select the service to get install
+
+demo-frontend
+demo-backend1
+demo-backend2
+
 "
 read service
 
-git clone https://github.com/TekspotEdu/microserviceapp.git
 
 if [ "$platform" == "container" ]; then
 
+
+
 #installing docker
-bash  docker_package.sh
+bash  docker_package
 
 #intalling the app
 
@@ -51,13 +51,18 @@ case $service in
 ;;
 esac
 
+
 else
+
+
+
 
 echo "enter ip adress:"
 read ip
 case $service in
 
-"react")
+"demo-frontend")
+#   ssh ubuntu@$ip "sudo apt-get update && apt-get install -y npm"
     ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
     ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y nginx"
     ssh ubuntu@$ip "sudo service nginx start"
@@ -67,7 +72,7 @@ case $service in
 
 ;;
 
-"java")
+"demo-backend1")
     ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y openjdk-11-jdk"
     ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
     ssh ubuntu@$ip "cd microserviceapp/demo-backend1/target/ && sudo java -jar sentiment-analysis-web-0.0.2-SNAPSHOT.jar --sa.logic.api.url http://$ip:5000"
@@ -75,7 +80,7 @@ case $service in
 
 ;;
 
-"python")
+"demo-backend2")
     ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3"
     ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3-pip"
     ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
@@ -84,17 +89,4 @@ case $service in
 
 esac
 fi
-
-
-
-
-
-
-
-
-
-
-
-
-
 

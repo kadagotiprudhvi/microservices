@@ -1,33 +1,22 @@
-#slecting platform to get install
-
-echo " select the platform to get instal
-
+echo "select the platfoen to get install
 aws
 container
-
 "
 read platform
 
-#selecting the service to get install
+echo "select the service to get install
 
-echo " select the service to get install
-
-demo-frontend
-demo-backend1
-demo-backend2
+react
+java
+python
 
 "
 read service
 
+git clone https://github.com/TekspotEdu/microserviceapp.git
 
 if [ "$platform" == "container" ]; then
-
-
-
-#installing docker
-bash  docker_package
-
-#intalling the app
+bash docker_package.sh
 
 case $service in
 
@@ -54,39 +43,36 @@ esac
 
 else
 
-
-
-
-echo "enter ip adress:"
+echo "enter ip address"
 read ip
 case $service in
-
-"demo-frontend")
-#   ssh ubuntu@$ip "sudo apt-get update && apt-get install -y npm"
-    ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
-    ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y nginx"
-    ssh ubuntu@$ip "sudo service nginx start"
-    ssh ubuntu@$ip "sudo chown -R ubuntu /var/www/html"
-    scp microserviceapp/demo-frontend/build/index.html ubuntu@$ip:/var/www/html/
-
-
-;;
-
-"demo-backend1")
-    ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y openjdk-11-jdk"
-    ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
-    ssh ubuntu@$ip "cd microserviceapp/demo-backend1/target/ && sudo java -jar sentiment-analysis-web-0.0.2-SNAPSHOT.jar --sa.logic.api.url http://$ip:5000"
+  
+"react")
+        ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
+        ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y nginx"
+        ssh ubuntu@$ip "sudo service nginx start"
+        ssh ubuntu@$ip "sudo chown -R ubuntu /var/www/html"
+        scp microserviceapp/demo-frontend/build/index.html ubuntu@$ip:/var/www/html/
 
 
 ;;
 
-"demo-backend2")
-    ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3"
-    ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3-pip"
-    ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
-    ssh ubuntu@$ip "cd microserviceapp/demo-backend2/sa/ && sudo pip3 install -r requirements.txt && sudo python3 sentiment_analysis.py"
+"java")
+        ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y openjdk-11-jdk"
+        ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
+        ssh ubuntu@$ip "cd microserviceapp/demo-backend1/target/ && sudo java -jar sentiment-analysis-web-0.0.2-SNAPSHOT.jar --sa.logic.api.url http://$ip:5000"
+
+
+;;
+
+"pyhton")
+        ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3"
+        ssh ubuntu@$ip "sudo apt-get update && sudo apt-get install -y python3-pip"
+        ssh ubuntu@$ip "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
+        ssh ubuntu@$ip "cd microserviceapp/demo-backend2/sa/ && sudo pip3 install -r requirements.txt && sudo python3 sentiment_analysis.py"
 ;;
 
 esac
 fi
 
+  

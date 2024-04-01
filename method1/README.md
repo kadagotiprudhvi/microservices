@@ -9,7 +9,7 @@ To use the script, follow the instructions below: <br>
 ```
 git clone https://github.com/kadagotiprudhvi/microservices.git
 ```
-## use this command to naviagte to correct path
+## This command navigates to correct directory path of the file 
 ```
 cd microservices/method1/
 ```

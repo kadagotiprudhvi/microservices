@@ -4,12 +4,17 @@
 ## Usage
 To use the script, follow the instructions below: <br>
 
-1)This command navigates to correct directory path of the file <br>
+1)clone the code by running below command
+```
+git clone https://github.com/kadagotiprudhvi/microservices.git
+```
+
+2)This command navigates to correct directory path of the file <br>
   ```
   $ cd Microservices/method2/
 ```
 
-2)This command runs the script and deploys the service <br>
+3)This command runs the script and deploys the service <br>
   ```
   $ bash root.sh
 ```

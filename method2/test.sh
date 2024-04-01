@@ -15,25 +15,25 @@ read service
 
 git clone https://github.com/TekspotEdu/microserviceapp.git
 
-if [ "$platforn" == "container" ]; then
+if [ "$platform" == "container" ]; then
 bash docker_package.sh
 
 case $service in
 
 "react")
-        cd /home/ubuntu/microserviceapp/demo-frontend
+        cd microserviceapp/demo-frontend
         sudo docker build -t docker_frontendimg . -f Dockerfile
         sudo docker run docker_frontendimg
 ;;
 
 "java")
-        cd /home/ubuntu/microserviceapp/demo-backend1
+        cd microserviceapp/demo-backend1
         sudo docker build -t docker_backend1img . -f Dockerfile
         sudo docker run docker_backend1img
 ;;
 
 "python")
-        cd /home/ubuntu/microserviceapp/demo-backend2
+        cd microserviceapp/demo-backend2
         sudo docker build -t docker_backend2img . -f Dockerfile
         sudo docker run docker_backend2img
 

@@ -18,6 +18,6 @@ After you entered all the information, the script will deploy the application to
 
 This script is non-interactive and its best for automation purpose. You will pass the inputs as command line arguments to this script, and it will deploy the applications.
 
-Please type ./method1/root.sh --help to understand the usage of this script.
+Please type ./method1/script.sh --help to understand the usage of this script.
 
 The applications are available at https://github.com/TekspotEdu/microserviceapp .

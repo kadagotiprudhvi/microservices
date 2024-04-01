@@ -7,19 +7,19 @@ git clone https://github.com/TekspotEdu/microserviceapp.git
 case $2 in
 
         "demo-frontend")
-                cd /home/ubuntu/microserviceapp/demo-frontend
+                cd microserviceapp/demo-frontend
                 sudo docker build -t docker_frontendimg . -f Dockerfile
                 sudo docker run -d docker_frontendimg
         ;;
 
         "demo-backend1")
-                cd /home/ubuntu/microserviceapp/demo-backend1
+                cd microserviceapp/demo-backend1
                 sudo docker build -t docker_backend1img . -f Dockerfile
                 sudo docker run docker_backend1img
         ;;
 
         "demo-backend2")
-                cd /home/ubuntu/microserviceapp/demo-backend2
+                cd microserviceapp/demo-backend2
                 sudo docker build -t docker_backend2img . -f Dockerfile
                 sudo docker run docker_backend2img
 

@@ -1,3 +1,17 @@
+if [ "$1" == "--help" ]; then
+    echo "Usage: example_script.sh [options] [argument]
+
+Options:
+  -h, --help       Display this help message
+
+Description:
+This script facilitates the installation of microservices on either Docker containers or AWS instances based on the provided parameters.
+"
+exit 0
+fi
+
+#################################################
+
 echo "select the platfoen to get install
 aws
 container

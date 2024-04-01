@@ -16,7 +16,7 @@ cd microservices/method2/
 
 3)This command runs the script and deploys the service <br>
   ```
-bash root.sh
+bash script.sh
 ```
 
 After running the above command enter the inputs with appropriate parameters as below mentioned <br>

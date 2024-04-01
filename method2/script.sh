@@ -3,29 +3,26 @@ git pull
 
 # Poping up the options for slecting environment to get install
 
-echo " select the platform to get instal
-
+echo 
+" select the platform to get instal
 aws
 container
-
 "
 read platform
 
 #Poping up the options for selecting the service to get install
 
-echo " select the service to get install
-
+echo 
+" select the service to get install
 react
 java
 python
-
 "
 read service
 
+git clone https://github.com/TekspotEdu/microserviceapp.git
 
 if [ "$platform" == "container" ]; then
-
-
 
 #installing docker
 bash  docker_package.sh

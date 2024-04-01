@@ -5,6 +5,15 @@ This script facilitates the installation of microservices on either Docker conta
 ## Usage
 To use the script, follow the instructions below: <br>
 
+## clone the code by running below command
+```
+git clone https://github.com/kadagotiprudhvi/microservices.git
+```
+## use this command to naviagte to correct path
+```
+cd microservices/method1/
+```
+
 ## • FOR DEPLOYING IN CONTAINER <br>
 
 Use this command for deploying demo-frontend service <br>

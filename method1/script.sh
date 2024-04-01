@@ -36,7 +36,7 @@ case $2 in
                 ssh ubuntu@$3 "sudo apt-get update && sudo apt-get install -y nginx"
                 ssh ubuntu@$3 "sudo service nginx start"
                 ssh ubuntu@$3 "sudo chown -R ubuntu /var/www/html"
-                scp /home/ubuntu/microserviceapp/demo-frontend/build/index.html ubuntu@$3:/var/www/html/
+                scp microserviceapp/demo-frontend/build/index.html ubuntu@$3:/var/www/html/
 
 
         ;;
@@ -44,7 +44,7 @@ case $2 in
         "java")
                 ssh ubuntu@$3 "sudo apt-get update && sudo apt-get install -y openjdk-11-jdk"
                 ssh ubuntu@$3 "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
-                ssh ubuntu@$3 "cd /home/ubuntu/microserviceapp/demo-backend1/target/ && sudo java -jar sentiment-analysis-web-0.0.2-SNAPSHOT.jar --sa.logic.api.url http://$3:5000"
+                ssh ubuntu@$3 "cd microserviceapp/demo-backend1/target/ && sudo java -jar sentiment-analysis-web-0.0.2-SNAPSHOT.jar --sa.logic.api.url http://$3:5000"
 
 
         ;;
@@ -53,7 +53,7 @@ case $2 in
                 ssh ubuntu@$3 "sudo apt-get update && sudo apt-get install -y python3"
                 ssh ubuntu@$3 "sudo apt-get update && sudo apt-get install -y python3-pip"
                 ssh ubuntu@$3 "sudo git clone "https://github.com/TekspotEdu/microserviceapp.git" "
-                ssh ubuntu@$3 "cd /home/ubuntu/microserviceapp/demo-backend2/sa/ && sudo pip3 install -r requirements.txt && sudo python3 sentiment_analysis.py"
+                ssh ubuntu@$3 "cd microserviceapp/demo-backend2/sa/ && sudo pip3 install -r requirements.txt && sudo python3 sentiment_analysis.py"
         ;;
 esac
 fi

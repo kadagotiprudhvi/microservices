@@ -92,7 +92,11 @@ fi
 
 
 
-read "bash final_script--help"
+read help
+case $help in
+
+
+bash script.sh--help)
 echo " To use the script, follow the instructions below:
 
 1)This command navigates to correct directory path of the file

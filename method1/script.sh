@@ -62,7 +62,7 @@ fi
 
 
 
-read "bash final_script--help"
+read "bash script.sh--help"
 echo " To use the script, follow the instructions below:
 
 Use this command for deploying demo-frontend service

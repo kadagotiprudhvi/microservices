@@ -60,9 +60,10 @@ fi
 
 
 
+case $4 in 
 
+bash script.sh--help)
 
-read "bash script.sh--help"
 echo " To use the script, follow the instructions below:
 
 Use this command for deploying demo-frontend service

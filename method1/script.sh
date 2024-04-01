@@ -57,3 +57,27 @@ case $2 in
         ;;
 esac
 fi
+
+
+
+
+
+read "bash final_script--help"
+echo " To use the script, follow the instructions below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

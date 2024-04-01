@@ -22,13 +22,13 @@ bash script.sh
 After running the above command enter the inputs with appropriate parameters as below mentioned <br>
 
 Enter the input environtment to install the microservices <br>
-   •aws <br>
    •container <br>
+   •aws <br>
 
 Enter the input microservice_name to install <br>
-   •demo-frontend <br>
-   •demo-backendend1 <br>
-   •demo-backendend2 <br>
+   •react <br>
+   •java <br>
+   •python <br>
 
 If you select aws it asks you to enter ip address <br>
    •Ip_address

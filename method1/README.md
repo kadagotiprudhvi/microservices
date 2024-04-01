@@ -5,39 +5,6 @@ This script facilitates the installation of microservices on either Docker conta
 ## Usage
 To use the script, follow the instructions below: <br>
 
-
-Examples:
-
-1) Run below commands to deploy demo-frontend application at [TekspotEdu/microserviceapp](https://github.com/TekspotEdu/microserviceapp) as a Docker Container.
- ```
-$ git clone https://github.com/kadagotiprudhvi/microservices.git
-$ cd microservices/method1/
-$ bash root.sh container demo-frontend
-```
-
-2) Run below commands to deploy demo-frontend application at [TekspotEdu/microserviceapp](https://github.com/TekspotEdu/microserviceapp) on a remote AWS VM.
-
- ```
-$ git clone https://github.com/kadagotiprudhvi/microservices.git
-$ cd microservices/method1/
-$ bash root.sh aws demo-frontend IPADDRESS_OF_AWS_VM
-```
-
-Note: Make sure that SSH keys are added on the aws instance, so it wont ask for credentials.
-
-3) Run below commands to deploy demo-backend1 application at [TekspotEdu/microserviceapp](https://github.com/TekspotEdu/microserviceapp) on a remote AWS VM.
-
- ```
-$ git clone https://github.com/kadagotiprudhvi/microservices.git
-$ cd microservices/method1/
-$ bash root.sh aws demo-backend1 IPADDRESS_OF_AWS_VM
-```
-
-Note: Make sure that SSH keys are added on the aws instance, so it wont ask for credentials.
-
-
-2)This command runs the script and deploys the service <br>
-
 ## • FOR DEPLOYING IN CONTAINER <br>
 
 Use this command for deploying demo-frontend service <br>
@@ -55,7 +22,7 @@ Use this command for deploying demo-backend2 service <br>
 $ bash root.sh container demo-backend2
 ```
 
-## • FOR DEPLOTING IN AWS <br>
+## • FOR DEPLOYING IN AWS <br>
  
 Use this command for deploying demo-frontend service <br>
   ```
